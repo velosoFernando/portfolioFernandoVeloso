@@ -30,9 +30,9 @@
 <pre>
 📦 projeto
  ┣ 📂 assets/           # Imagens utilizadas no site
- ┣ 📂 pages/            # Arquivos de estilo
- ┣ 📂 js/               # Scripts JavaScript
- ┣ 📂 pages/            # Páginas adicionais
+ ┣ 📂 pages/            # Páginas do repositório
+ ┣ 📂 scripts/          # Scripts JavaScript
+ ┣ 📂 style/            # Arquivos CSS
  ┣ 📜 index.html        # Página principal
  ┗ 📜 README.md         # Documentação do projeto
 </pre>
