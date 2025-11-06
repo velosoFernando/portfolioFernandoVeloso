@@ -1,4 +1,4 @@
-<h1 align="center">🌐 Portfólio de Fernando Veloso</h1>
+<h1 align="center">👨🏻‍💻 Portfólio de Fernando Veloso</h1>
 
 <h2>🚀 Sobre o projeto</h2>
 <p>Este repositório contém um projeto desenvolvido com <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>, com o objetivo de praticar conceitos fundamentais de estrutura, estilo e interatividade em páginas web.</p>
