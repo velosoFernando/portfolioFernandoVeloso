@@ -11,6 +11,7 @@
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat)
 ![Vercel](https://img.shields.io/badge/-Vercel-000000?logo=vercel&logoColor=white&style=flat)
 
+*HTML:* Toda a estrutura de hipertexto, construção do site.
 ---
 
 ## 🚀 Sobre o projeto
@@ -20,4 +21,14 @@ Este repositório contém um projeto desenvolvido com **HTML**, **CSS** e **Java
 
 ## 📁 Estrutura do projeto
 
-
+<h2>🧩 Tecnologias utilizadas</h2>
+<ul>
+  <li><strong>HTML:</strong> Estrutura de hipertexto, responsável pela construção e organização do conteúdo do site.</li>
+  <li><strong>CSS:</strong> Estilização, cores, espaçamento e layout visual das páginas.</li>
+  <li><strong>JavaScript:</strong> Interatividade e dinamismo, manipulando elementos e eventos no navegador.</li>
+  <li><strong>Git:</strong> Controle de versão para gerenciar alterações no código.</li>
+  <li><strong>GitHub:</strong> Plataforma para hospedagem e colaboração em projetos versionados.</li>
+  <li><strong>Vercel:</strong> Hospedagem e deploy de aplicações front-end.</li>
+  <li><strong>ClickUp:</strong> Organização e gestão de tarefas.</li>
+  <li><strong>VS Code:</strong> Editor de código principal, leve e personalizável.</li>
+</ul>
