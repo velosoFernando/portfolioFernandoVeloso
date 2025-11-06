@@ -29,8 +29,8 @@
 <h2>📁 Estrutura do projeto</h2>
 <pre>
 📦 projeto
- ┣ 📂 img/              # Imagens utilizadas no site
- ┣ 📂 css/              # Arquivos de estilo
+ ┣ 📂 assets/           # Imagens utilizadas no site
+ ┣ 📂 pages/            # Arquivos de estilo
  ┣ 📂 js/               # Scripts JavaScript
  ┣ 📂 pages/            # Páginas adicionais
  ┣ 📜 index.html        # Página principal
