@@ -773,3 +773,24 @@ article .icon {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+
+/* ===== Rodapé ajustado ===== */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 0; /* Remove qualquer espaço acima */
+  line-height: 1.6;
+}
+
+footer p {
+  margin: 0;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+
