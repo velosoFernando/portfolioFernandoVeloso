@@ -7,3 +7,243 @@
         display: flex;
     }
 }
+
+/* ===== AJUSTES DE RESPONSIVIDADE ===== */
+
+/* PERFIL */
+@media (max-width: 992px) {
+  #perfil {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    height: auto;
+    margin: 2rem 1rem;
+  }
+
+  .section__pic-container {
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .section__pic-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+  }
+
+  .section__text h1 {
+    font-size: 2.2rem;
+  }
+
+  .btn-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* SOBRE MIM */
+@media (max-width: 992px) {
+  #about {
+    height: auto;
+    margin: 2rem 1rem;
+  }
+
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-containers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-pic {
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 1.5rem;
+  }
+
+  .arrow {
+    right: 2rem;
+    bottom: 1rem;
+  }
+}
+
+/* EXPERIÊNCIA */
+@media (max-width: 992px) {
+  .experience-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-container {
+    width: 90%;
+    margin-bottom: 1.5rem;
+  }
+
+  article {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* PROJETOS */
+@media (max-width: 992px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .project-card {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+}
+
+/* CORREÇÃO GERAL PARA TELAS MUITO PEQUENAS */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1.title {
+    font-size: 1.8rem;
+  }
+
+  nav .logo {
+    font-size: 1.4rem;
+  }
+
+  .nav-links {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    width: auto;
+    padding: 0.8rem 1.4rem;
+  }
+}
+
+/* Oculta as setas no mobile */
+@media (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
+}
+
+/* ===== SEÇÃO PROJETOS (MOBILE) ===== */
+@media (max-width: 768px) {
+  #projects {
+    padding: 3rem 1rem; /* reduz espaço vertical */
+  }
+
+  #projects .title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* reduz o espaço entre os cards */
+  }
+
+  .project-card {
+    width: 90%;
+    max-width: 420px;
+    padding: 1.5rem 1rem; /* diminui o padding interno */
+    border-radius: 1.2rem;
+  }
+
+  .project-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .project-image {
+    height: 150px; /* reduz a altura da imagem */
+    margin-bottom: 1rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-card .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== CORREÇÃO FINAL DA SEÇÃO PROJETOS NO MOBILE ===== */
+@media (max-width: 768px) {
+  /* Corrige margens globais do section */
+  section {
+    margin: 0 1rem;
+    height: auto;
+  }
+
+  #projects {
+    padding: 2rem 0 3rem 0;
+  }
+
+  #projects .title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 360px;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .project-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 0.8rem;
+    border-radius: 0.8rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+    color: rgb(85, 85, 85);
+  }
+
+  .project-card .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+

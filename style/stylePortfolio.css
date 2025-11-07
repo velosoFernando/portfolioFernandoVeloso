@@ -72,6 +72,15 @@ a:hover {
     cursor: default;
 }
 
+.about-pic {
+  border-radius: 2rem;
+  transition: transform 0.4s ease;
+}
+
+.about-pic:hover {
+  transform: scale(1.05);
+}
+
 /* MENU HAMBURGUER */
 
 #hamburguer-nav {
@@ -369,6 +378,14 @@ section {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
+/* Efeito flutuante nos cards de experiência */
+.details-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
 /* Grade interna dos itens */
 /* Espaçamento uniforme e equilibrado entre os itens */
 .article-container {
@@ -398,7 +415,7 @@ article .icon {
   margin-top: 2px;
 }
 
-/* ===== RESPONSIVIDADE ===== */
+/* RESPONSIVIDADE */
 
 /* Tablet */
 @media (max-width: 992px) {
@@ -437,3 +454,126 @@ article .icon {
   }
 }
 
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+  padding: 4rem 0;
+}
+
+#projects {
+  position: relative;
+  padding: 6rem 0 4rem 0; /* aumenta o espaço superior */
+}
+
+#projects .title {
+  margin-bottom: 3rem; /* dá o mesmo respiro entre o título e os cards */
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.project-card {
+  flex: 1;
+  min-width: 320px;
+  max-width: 400px;
+  background: white;
+  border-radius: 1.5rem;
+  border: 1px solid rgb(200, 200, 200);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h2 {
+  margin-bottom: 1rem;
+  color: rgb(53, 53, 53);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px; /* altura reduzida e proporcional */
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  margin-bottom: 1.2rem;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* agora a imagem se adapta ao espaço sem cortar */
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.project-image img:hover {
+  transform: scale(1.05);
+}
+
+
+.project-card p {
+  color: rgb(85, 85, 85);
+  font-size: 0.95rem;
+  margin: 1rem 0 1.5rem 0;
+  line-height: 1.4rem;
+  flex-grow: 1; /* faz o texto ocupar espaço proporcional */
+}
+
+.project-card .btn {
+  align-self: center;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .projects-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-card {
+    max-width: 90%;
+  }
+}
+
+/* Imagem inicial e ícones */
+
+.section__pic-container img {
+  border-radius: 1.5rem; /* cantos suavemente arredondados */
+  transition: transform 0.4s ease;
+}
+
+.section__pic-container img:hover {
+  transform: scale(1.05); /* zoom suave */
+}
+
+
+/* Efeito de zoom nos ícones de redes sociais */
+#socials-container .icon {
+  transition: transform 0.3s ease;
+}
+
+#socials-container .icon:hover {
+  transform: scale(1.2); /* aumenta 20% no hover */
+}
