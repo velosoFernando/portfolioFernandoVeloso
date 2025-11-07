@@ -577,3 +577,199 @@ article .icon {
 #socials-container .icon:hover {
   transform: scale(1.2); /* aumenta 20% no hover */
 }
+
+/* ===== CONTACT SECTION - REFINADO ===== */
+#contact {
+  position: relative;
+  padding: 4rem 0;
+  margin: 0 10rem;
+  min-height: 80vh;
+}
+
+/* ===== Ajuste fino do layout da seção Contato ===== */
+#contact .contact-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1rem !important; /* diminui o espaço entre o bloco e a imagem */
+  flex-wrap: nowrap !important;
+}
+
+#contact .contact-info {
+  flex: 1 !important;
+  padding: 1.5rem !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important; /* borda mais fina */
+  border-radius: 12px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03) !important;
+  background-color: #fff !important;
+  max-width: 600px !important; /* impede que o card fique largo demais */
+  transition: all 0.3s ease !important;
+}
+
+
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  color: rgb(53, 53, 53);
+}
+
+.contact-info p {
+  color: rgb(85, 85, 85);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.contact-item img {
+  height: 22px;
+  width: 22px;
+}
+
+.contact-item a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: rgb(90, 90, 90);
+}
+
+.contact-pic-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-pic {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.contact-pic:hover {
+  transform: scale(1.05);
+}
+
+#contact .btn {
+  width: fit-content;
+  padding: 0.8rem 1.6rem;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 992px) {
+  #contact {
+    margin: 2rem 1rem;
+  }
+
+  .contact-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+
+  .contact-info {
+    width: 100%;
+    align-items: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  .contact-pic {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .contact-info h2 {
+    margin-top: 1rem;
+  }
+}
+
+/* ===== Correção completa do layout da seção Contato ===== */
+#contact {
+  text-align: center;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Container do card + imagem */
+#contact .contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* controla o espaço entre card e imagem */
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card de informações */
+#contact .contact-info {
+  flex: 1;
+  max-width: 500px;
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  text-align: left;
+}
+
+/* Imagem ao lado */
+#contact .contact-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#contact .contact-image img {
+  max-width: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #contact .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #contact .contact-info {
+    text-align: center;
+  }
+}
+
+/* ===== Efeito flutuante no card de contato ===== */
+#contact .contact-info {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact .contact-info:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
