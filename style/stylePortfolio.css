@@ -14,6 +14,11 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -219,6 +224,14 @@ section {
   gap: 1rem;
 }
 
+#socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.8rem; /* ajuste sutil e visualmente agradável */
+}
+
+
 .btn {
   font-weight: 750;
   transition: all 300ms ease;
@@ -315,3 +328,112 @@ section {
 .text-container {
     text-align: center;
 }
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+  padding: 4rem 0;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Contêiner principal */
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Blocos individuais */
+.details-container {
+  flex: 1;
+  min-width: 420px;
+  background: white;
+  border-radius: 1.5rem;
+  border: 1px solid rgb(200, 200, 200);
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Grade interna dos itens */
+/* Espaçamento uniforme e equilibrado entre os itens */
+.article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem; /* diminui o espaço total entre os itens */
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+
+
+/* Artigos individuais */
+article {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+
+article .icon {
+  cursor: default;
+  min-width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .experience-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-container {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .article-container {
+    grid-template-columns: 1fr 1fr; /* mantém 2 colunas em tablets */
+    gap: 1rem 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .article-container {
+    grid-template-columns: 1fr; /* empilha os itens */
+    justify-items: center;
+  }
+
+  article {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .details-container {
+    width: 100%;
+    min-width: unset;
+    padding: 1.5rem;
+  }
+}
+
