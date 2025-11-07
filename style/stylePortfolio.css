@@ -793,4 +793,77 @@ footer p {
   letter-spacing: 0.5px;
 }
 
+/* Botão Voltar ao Topo */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #000;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: none; /* Escondido por padrão */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+#backToTop img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1); /* seta branca */
+  transition: filter 0.3s ease;
+}
+
+/* Hover */
+#backToTop:hover {
+  transform: scale(1.1);
+}
+
+/* Quando o botão está sobre o rodapé */
+#backToTop.footer-active {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#backToTop.footer-active img {
+  filter: brightness(0); /* seta preta */
+}
+
+/* Botão para ir até "Sobre Mim" */
+#toAbout {
+  position: absolute;
+  bottom: 40px;
+  right: 50px;
+  background-color: #000;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+#toAbout img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1); /* seta branca */
+  transition: transform 0.3s ease;
+}
+
+/* Efeito de hover */
+#toAbout:hover {
+  transform: scale(1.1);
+}
+
+#toAbout:hover img {
+  transform: translateY(3px);
+}

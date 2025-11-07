@@ -29,10 +29,12 @@
                 <span></span>
             </div>
         <div class="menu-links">
+            <ul>
                 <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
                 <li><a href="#career" onclick="toggleMenu()">Carreira</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+            </ul>
         </div>
         </div>
     </nav>
@@ -53,7 +55,11 @@
 
                 <img src="./assets/github.png" alt="Meu perfil no Github" class="icon" onclick="location.href='https://github.com/velosoFernando'">
             </div>
+            <button id="toAbout">
+            <img src="./assets/arrow.png" alt="Ir para Sobre Mim">
+            </button>
         </div>
+        
     </section>
     <section id="about">
       <h1 class="title">Sobre Mim</h1>
@@ -97,11 +103,9 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='#experience'"
-      />
+        onclick="location.href='#experience'"/>
     </section>
-        <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href="#carreira"">
-    </section>
+            <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick=location.href="#carreira">
     <section id="experience">
         <h1 class="title">Experiência</h1>
         <div class="experience-details-container">
@@ -252,7 +256,7 @@
                 <div class="project-card">
                 <h2>TaskCheck</h2>
                 <div class="project-image">
-                    <img src="assets/task_my_check.png">
+                    <img src="assets/task_my_check.png" alt="Logo TaskCheck">
                 </div>
                 <p>
                     Massa de testes, testes de regressão e aplicação CI/CD. Automações web e mobile. Gerenciamento da esteira de testes.
@@ -291,12 +295,11 @@
                     <div class="contact-details">
                     <div class="contact-item">
                         <img src="./assets/whatsapp.png" alt="Ícone do WhatsApp" class="icon">
-                        <a href="https://wa.me/5522997077837" target="_blank">+55 (22) 99707-7837</a>
+                        <a href="https://wa.me/5522997077837" target="_blank" rel="noopener noreferrer">+55 22 99707-7837</a>
                     </div>
-
                     <div class="contact-item">
                         <img src="./assets/linkedin.png" alt="Ícone do LinkedIn" class="icon">
-                        <a href="https://www.linkedin.com/in/fernando-veloso1995/" target="_blank">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/fernando-veloso1995/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </div>
 
                     <div class="contact-item">
@@ -320,6 +323,10 @@
                     class="icon arrow"
                     onclick="location.href='#top'"/>
     </section>
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" title="Voltar ao topo">
+        <img src="./assets/arrow-up.png" alt="Voltar ao topo">
+    </button>
     <footer class="footer">
         <p>Feito por <strong>Fernando Veloso</strong> - 2025</p>
     </footer>
