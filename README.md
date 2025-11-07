@@ -50,13 +50,7 @@
 <p>Durante o desenvolvimento, são abordados temas como hierarquia no HTML, propriedades do CSS, manipulação do DOM e versionamento com Git/GitHub.</p>
 
 <h2>🖥️ Como visualizar o projeto</h2>
-<ol>
-  <li>Clone o repositório:<br>
-  <code>git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git</code></li>
-  <li>Acesse a pasta:<br>
-  <code>cd NOME-DO-REPOSITORIO</code></li>
-  <li>Abra o arquivo <code>index.html</code> no navegador ou use o <strong>Live Server</strong> no VS Code.</li>
-</ol>
+<p>Acesse o Link: <a href="https://portfolio-fernando-veloso.vercel.app/" target="_blank">Portfólio do Veloso</a></p>
 
 <h2>✨ Autor</h2>
 
