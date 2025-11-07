@@ -50,7 +50,7 @@
 <p>Durante o desenvolvimento, são abordados temas como hierarquia no HTML, propriedades do CSS, manipulação do DOM e versionamento com Git/GitHub.</p>
 
 <h2>🖥️ Como visualizar o projeto</h2>
-<p>Acesse o Link: <a href="https://portfolio-fernando-veloso.vercel.app/" target="_blank">Portfólio do Veloso</a></p>
+<p>Acesse o Link: <a href="https://portfolio-fernando-veloso.vercel.app/" target="_blank" rel="noopener noreferrer">Portfólio do Veloso</a></p>
 
 <h2>✨ Autor</h2>
 
